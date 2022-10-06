@@ -1,0 +1,143 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="EmbeddedFiles\css\app.a97a89e0.css" />
+    <None Remove="EmbeddedFiles\css\chunk-vendors.47ea2e99.css" />
+    <None Remove="EmbeddedFiles\favicon.ico" />
+    <None Remove="EmbeddedFiles\img\a1.92dad038.bmp" />
+    <None Remove="EmbeddedFiles\img\a2.a083c6f1.bmp" />
+    <None Remove="EmbeddedFiles\img\a3.658a1c23.bmp" />
+    <None Remove="EmbeddedFiles\img\a4.a5faf8a7.bmp" />
+    <None Remove="EmbeddedFiles\img\logo.b11473be.png" />
+    <None Remove="EmbeddedFiles\index.html" />
+    <None Remove="EmbeddedFiles\js\app.b9d890a8.js" />
+    <None Remove="EmbeddedFiles\js\app.b9d890a8.js.map" />
+    <None Remove="EmbeddedFiles\js\chunk-vendors.7afe8fdb.js" />
+    <None Remove="EmbeddedFiles\js\chunk-vendors.7afe8fdb.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedFiles\css\app.a97a89e0.css" />
+    <EmbeddedResource Include="EmbeddedFiles\css\chunk-vendors.47ea2e99.css" />
+    <EmbeddedResource Include="EmbeddedFiles\img\a1.92dad038.bmp" />
+    <EmbeddedResource Include="EmbeddedFiles\img\a2.a083c6f1.bmp" />
+    <EmbeddedResource Include="EmbeddedFiles\img\a3.658a1c23.bmp" />
+    <EmbeddedResource Include="EmbeddedFiles\img\a4.a5faf8a7.bmp" />
+    <EmbeddedResource Include="EmbeddedFiles\img\logo.b11473be.png" />
+    <EmbeddedResource Include="EmbeddedFiles\js\app.b9d890a8.js" />
+    <EmbeddedResource Include="EmbeddedFiles\js\app.b9d890a8.js.map" />
+    <EmbeddedResource Include="EmbeddedFiles\js\chunk-vendors.7afe8fdb.js" />
+    <EmbeddedResource Include="EmbeddedFiles\js\chunk-vendors.7afe8fdb.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedFiles\favicon.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmbeddedFiles\index.html">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetDimension.NanUI" Version="0.9.90.193" />
+    <PackageReference Include="NetDimension.NanUI.Runtime" Version="90.6.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\css\app.a97a89e0.css">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\css\chunk-vendors.47ea2e99.css">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\css\layui.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\css\modules\code.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\css\modules\laydate\default\laydate.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\css\modules\layer\default\icon-ext.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\css\modules\layer\default\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\css\modules\layer\default\layer.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\css\modules\layer\default\loading-0.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\css\modules\layer\default\loading-1.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\css\modules\layer\default\loading-2.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\font\iconfont.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\font\iconfont.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\font\iconfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\font\iconfont.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\font\iconfont.woff2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LocalFiles\layui\layui.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Windows.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
